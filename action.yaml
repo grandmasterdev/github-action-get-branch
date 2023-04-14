@@ -1,6 +1,10 @@
 name: get-branch
 description: 'Get the active branch in the workflow'
 
+outputs:
+  branch-name: 
+    description: 'The name of the active branch in github action workflow'
+    
 runs:
   using: node16
   main: dist/index.js
