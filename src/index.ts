@@ -2,6 +2,7 @@ import { context } from "@actions/github";
 import { setOutput } from "@actions/core";
 
 export const run = () => {
+  console.log(context);
   const refParts = context.ref.split("/");
   const branchName = refParts[refParts.length - 1];
   
